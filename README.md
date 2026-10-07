@@ -6,22 +6,29 @@ Personal LeetCode practice by [Lawson Dong](https://github.com/Lawson-Dong), doc
 
 | Easy | Medium | Hard | Total |
 |---|---|---|---|
-| 1 | 0 | 0 | 1 |
+| 2 | 0 | 0 | 2 |
 
 ## Problem Index
 
 | # | Problem | Difficulty | Topics | Approach | Expected Time | Space | Notes | Code |
 |---|---|---|---|---|---|---|---|---|
 | 001 | [Two Sum](https://leetcode.com/problems/two-sum/) | Easy | Array, Hash Table | One-pass hash table | O(n) | O(n) | [README](easy/001/README.md) | [Python](easy/001/solution_v1.py) |
+| 009 | [Palindrome Number](https://leetcode.com/problems/palindrome-number/) | Easy | Math, String | Explicit reversal (v1); string slicing (v2) | O(d) | O(d) | [README](easy/009/README.md) | [v1](easy/009/solution_v1.py), [v2](easy/009/solution_v2.py) |
+
+For Palindrome Number, `d` is the number of decimal digits.
 
 ## Repository Structure
 
 ```text
 .
 ├── easy/
-│   └── 001/
+│   ├── 001/
+│   │   ├── README.md
+│   │   └── solution_v1.py
+│   └── 009/
 │       ├── README.md
-│       └── solution_v1.py
+│       ├── solution_v1.py
+│       └── solution_v2.py
 ├── medium/
 ├── hard/
 └── LICENSE
