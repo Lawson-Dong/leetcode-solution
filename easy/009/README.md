@@ -84,18 +84,18 @@ are not a substitute for complexity analysis.
 
 ## Complexity Analysis
 
-Let `d` be the number of decimal digits in the input.
+Let `n` be the number of decimal digits in the input.
 
 | Version | Time Complexity | Auxiliary Space |
 |---|---|---|
-| v1 | O(d) | O(d) |
-| v2 | O(d) | O(d) |
+| v1 | O(n) | O(n) |
+| v2 | O(n) | O(n) |
 
 - **v1:** String conversion, list construction, reversal, joining,
-  integer parsing, and comparison take O(d) time overall under the
-  bounded integer constraints. The strings and lists require O(d) space.
-- **v2:** String conversion, reversed slicing, and comparison take O(d)
-  time. The original string and reversed copy require O(d) space.
+  integer parsing, and comparison take O(n) time overall under the
+  bounded integer constraints. The strings and lists require O(n) space.
+- **v2:** String conversion, reversed slicing, and comparison take O(n)
+  time. The original string and reversed copy require O(n) space.
 
 Both versions use strings. The no-string follow-up would require
 a separate arithmetic approach.
@@ -114,8 +114,8 @@ while memory usage beat only 19.07%. This prompted me to think about
 the **time–space trade-off** in computer science.
 
 - The solution creates a string with `str(x)` and a reversed copy
-  with `[::-1]`. These allocations require O(d) auxiliary space,
-  where d is the number of digits.
+  with `[::-1]`. These allocations require O(n) auxiliary space,
+  where n is the number of digits.
 - String slicing replaces the explicit reversal loop with a built-in
   operation and removes several intermediate conversions, making
   the implementation simpler and potentially faster in practice.
@@ -123,7 +123,7 @@ the **time–space trade-off** in computer science.
   use O(1) auxiliary space under the fixed-width integer model.
 
 However, the submission percentiles alone do not establish a
-time–space trade-off between v1 and v2. Both versions use O(d) space,
+time–space trade-off between v1 and v2. Both versions use O(n) space,
 and v1 also creates intermediate lists and strings. Individual
 benchmark results can vary.
 
