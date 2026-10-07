@@ -1,18 +1,18 @@
 # 001. Two Sum
 
-## 🔗 Problem Link
+## Problem Link
 
 [LeetCode — Two Sum](https://leetcode.com/problems/two-sum/)
 
-## 🏷️ Difficulty
+## Difficulty
 
 Easy
 
-## 🏷️ Tags
+## Tags
 
 Array, Hash Table
 
-## 📝 Problem Description
+## Problem Description
 
 Given an integer array `nums` and an integer `target`, return the indices
 of two distinct elements whose sum equals `target`.
@@ -28,7 +28,7 @@ element twice, and you may return the indices in either order.
 | `[3, 2, 4]` | `6` | `[1, 2]` |
 | `[3, 3]` | `6` | `[0, 1]` |
 
-## 💡 Solution Approach
+## Solution Approach
 
 ### Approach 1 (v1): One-Pass Hash Table
 
@@ -70,7 +70,7 @@ processed. Therefore, the pair will be found.
 This approach already achieves optimal expected linear time.
 No separate optimization version is needed.
 
-## 📊 Complexity Analysis
+## Complexity Analysis
 
 Let `n` be the length of `nums`.
 
@@ -81,11 +81,11 @@ Let `n` be the length of `nums`.
 Dictionary lookup and insertion take O(1) on average. The algorithm
 visits each element at most once and stores at most `n` entries.
 
-## 💻 Code Implementation
+## Code Implementation
 
 - [solution_v1.py](solution_v1.py): One-pass hash table based on the
   submitted solution, with clearer variable names and comments.
 
-## 🧠 Reflection and Takeaways
+## Reflection and Takeaways
 
 <!-- TODO: Add personal reflections and takeaways. -->

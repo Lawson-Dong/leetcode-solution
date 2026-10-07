@@ -1,18 +1,18 @@
 # 009. Palindrome Number
 
-## 🔗 Problem Link
+## Problem Link
 
 [LeetCode — Palindrome Number](https://leetcode.com/problems/palindrome-number/)
 
-## 🏷️ Difficulty
+## Difficulty
 
 Easy
 
-## 🏷️ Tags
+## Tags
 
 Math, String
 
-## 📝 Problem Description
+## Problem Description
 
 Given an integer `x`, return `True` if its decimal representation reads
 the same forward and backward; otherwise, return `False`.
@@ -28,7 +28,7 @@ The input is a signed 32-bit integer: `-2**31 <= x <= 2**31 - 1`.
 | `10` | `False` | A nonzero number ending in zero cannot be a palindrome. |
 | `0` | `True` | A single digit is a palindrome. |
 
-## 💡 Solution Approach
+## Solution Approach
 
 ### Approach 1 (v1): Explicit Digit Reversal
 
@@ -82,7 +82,7 @@ These are measurements from individual submissions. A reported
 `0 ms` does not mean constant-time execution, and runtime percentiles
 are not a substitute for complexity analysis.
 
-## 📊 Complexity Analysis
+## Complexity Analysis
 
 Let `d` be the number of decimal digits in the input.
 
@@ -100,14 +100,14 @@ Let `d` be the number of decimal digits in the input.
 Both versions use strings. The no-string follow-up would require
 a separate arithmetic approach.
 
-## 💻 Code Implementation
+## Code Implementation
 
 - [solution_v1.py](solution_v1.py): Explicit digit reversal based on
   the original submission, with clearer comments and a direct Boolean return.
 - [solution_v2.py](solution_v2.py): Optimized string-slicing implementation
   based on the later submission.
 
-## 🧠 Reflection and Takeaways
+## Reflection and Takeaways
 
 In my v2 submission, the reported runtime beat 100% of submissions,
 while memory usage beat only 19.07%. This prompted me to think about
