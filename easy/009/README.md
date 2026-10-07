@@ -109,4 +109,26 @@ a separate arithmetic approach.
 
 ## 🧠 Reflection and Takeaways
 
-<!-- TODO: Add personal reflections and takeaways. -->
+In my v2 submission, the reported runtime beat 100% of submissions,
+while memory usage beat only 19.07%. This prompted me to think about
+the **time–space trade-off** in computer science.
+
+- The solution creates a string with `str(x)` and a reversed copy
+  with `[::-1]`. These allocations require O(d) auxiliary space,
+  where d is the number of digits.
+- String slicing replaces the explicit reversal loop with a built-in
+  operation and removes several intermediate conversions, making
+  the implementation simpler and potentially faster in practice.
+- An arithmetic approach could avoid these string allocations and
+  use O(1) auxiliary space under the fixed-width integer model.
+
+However, the submission percentiles alone do not establish a
+time–space trade-off between v1 and v2. Both versions use O(d) space,
+and v1 also creates intermediate lists and strings. Individual
+benchmark results can vary.
+
+In many applications, spending a modest amount of memory to reduce
+response time is a worthwhile choice. The decision should depend
+on input size, memory limits, and measured performance. My takeaway
+is to balance speed, memory usage, and readability rather than
+optimize for a single benchmark percentile.
