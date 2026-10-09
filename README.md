@@ -6,7 +6,7 @@ Personal LeetCode practice by [Lawson Dong](https://github.com/Lawson-Dong), doc
 
 | Easy | Medium | Hard | Total |
 |---|---|---|---|
-| 3 | 0 | 0 | 3 |
+| 4 | 0 | 0 | 4 |
 
 ## Problem Index
 
@@ -15,8 +15,9 @@ Personal LeetCode practice by [Lawson Dong](https://github.com/Lawson-Dong), doc
 | 001 | [Two Sum](https://leetcode.com/problems/two-sum/) | Easy | Array, Hash Table | One-pass hash table | O(n) | O(n) | [README](easy/001/README.md) | [Python](easy/001/solution_v1.py) |
 | 009 | [Palindrome Number](https://leetcode.com/problems/palindrome-number/) | Easy | Math, String | Explicit reversal (v1); string slicing (v2) | O(n) | O(n) | [README](easy/009/README.md) | [v1](easy/009/solution_v1.py), [v2](easy/009/solution_v2.py) |
 | 013 | [Roman to Integer](https://leetcode.com/problems/roman-to-integer/) | Easy | Hash Table, Math, String | Adjacent-symbol comparison | O(n) | O(1) | [README](easy/013/README.md) | [Python](easy/013/solution_v1.py) |
+| 014 | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/) | Easy | String, Trie | Vertical scanning | O(nm) | O(1) auxiliary; O(p) output | [README](easy/014/README.md) | [Python](easy/014/solution_v1.py) |
 
-Here, `n` denotes input length: the number of array elements for Two Sum the number of decimal digits for Palindrome Number, and the number of Roman numeral characters for Roman to Integer.
+Here, `n` denotes input length: the number of array elements for Two Sum, the number of decimal digits for Palindrome Number, and the number of Roman numeral characters for Roman to Integer. For Longest Common Prefix, `n` is the number of strings, `m` is the length of the first string, and `p` is the returned prefix length.
 
 ## Repository Structure
 
@@ -30,7 +31,10 @@ Here, `n` denotes input length: the number of array elements for Two Sum the num
 │   │   ├── README.md
 │   │   ├── solution_v1.py
 │   │   └── solution_v2.py
-│   └── 013/
+│   ├── 013/
+│   │   ├── README.md
+│   │   └── solution_v1.py
+│   └── 014/
 │       ├── README.md
 │       └── solution_v1.py
 ├── medium/
