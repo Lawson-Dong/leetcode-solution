@@ -6,7 +6,7 @@ Personal LeetCode practice by [Lawson Dong](https://github.com/Lawson-Dong), doc
 
 | Easy | Medium | Hard | Total |
 |---|---|---|---|
-| 6 | 0 | 0 | 6 |
+| 7 | 0 | 0 | 7 |
 
 ## Problem Index
 
@@ -17,7 +17,7 @@ Personal LeetCode practice by [Lawson Dong](https://github.com/Lawson-Dong), doc
 | 013 | [Roman to Integer](https://leetcode.com/problems/roman-to-integer/) | Easy | Hash Table, Math, String | Adjacent-symbol comparison | O(n) | O(1) | [README](easy/013/README.md) | [Python](easy/013/solution_v1.py) |
 | 014 | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/) | Easy | String, Trie | Vertical scanning | O(nm) | O(1) auxiliary; O(p) output | [README](easy/014/README.md) | [Python](easy/014/solution_v1.py) |
 | 020 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | Easy | String, Stack | Stack with bracket matching map | O(n) | O(n) | [README](easy/020/README.md) | [Python](easy/020/solution_v1.py) |
-| 021 | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) | Easy | Linked List, Recursion | Iterative pointer merge | O(m + n) | O(1) | [README](easy/021/README.md) | [Python](easy/021/solution_v1.py) |
+| 066 | [Plus One](https://leetcode.com/problems/plus-one/) | Easy | Array, Math | Right-to-left carry (v1); integer conversion (v2) | O(n) for v1 | O(1) auxiliary for v1 | [README](easy/066/README.md) | [v1](easy/066/solution_v1.py), [v2](easy/066/solution_v2.py) |\n| 021 | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) | Easy | Linked List, Recursion | Iterative pointer merge | O(m + n) | O(1) | [README](easy/021/README.md) | [Python](easy/021/solution_v1.py) |
 
 Here, `n` denotes input length: the number of array elements for Two Sum, the number of decimal digits for Palindrome Number, and the number of Roman numeral characters for Roman to Integer, and the number of characters for Valid Parentheses. For Merge Two Sorted Lists, `m` and `n` are the input list lengths. For Longest Common Prefix, `n` is the number of strings, `m` is the length of the first string, and `p` is the returned prefix length.
 
