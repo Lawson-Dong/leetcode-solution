@@ -47,6 +47,10 @@ Here, `n` denotes input length: the number of array elements for Two Sum, the nu
 │   ├── 021/
 │   │   ├── README.md
 │   │   └── solution_v1.py
+│   ├── 066/
+│   │   ├── README.md
+│   │   ├── solution_v1.py
+│   │   └── solution_v2.py
 │   └── 069/
 │       ├── README.md
 │       ├── solution_v1.py
