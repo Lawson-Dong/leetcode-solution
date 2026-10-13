@@ -6,7 +6,7 @@ Personal LeetCode practice by [Lawson Dong](https://github.com/Lawson-Dong), doc
 
 | Easy | Medium | Hard | Total |
 |---|---|---|---|
-| 9 | 0 | 0 | 9 |
+| 10 | 0 | 0 | 10 |
 
 ## Problem Index
 
@@ -17,6 +17,7 @@ Personal LeetCode practice by [Lawson Dong](https://github.com/Lawson-Dong), doc
 | 013 | [Roman to Integer](https://leetcode.com/problems/roman-to-integer/) | Easy | Hash Table, Math, String | Adjacent-symbol comparison | O(n) | O(1) | [README](easy/013/README.md) | [Python](easy/013/solution_v1.py) |
 | 014 | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/) | Easy | String, Trie | Vertical scanning | O(nm) | O(1) auxiliary; O(p) output | [README](easy/014/README.md) | [Python](easy/014/solution_v1.py) |
 | 020 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | Easy | String, Stack | Stack with bracket matching map | O(n) | O(n) | [README](easy/020/README.md) | [Python](easy/020/solution_v1.py) |
+| 035 | [Search Insert Position](https://leetcode.com/problems/search-insert-position/) | Easy | Array, Binary Search | Inclusive-interval binary search | O(log n) | O(1) | [README](easy/035/README.md) | [Python](easy/035/solution_v1.py) |
 | 066 | [Plus One](https://leetcode.com/problems/plus-one/) | Easy | Array, Math | Right-to-left carry (v1); integer conversion (v2) | O(n) for v1 | O(1) auxiliary for v1 | [README](easy/066/README.md) | [v1](easy/066/solution_v1.py), [v2](easy/066/solution_v2.py) |
 | 021 | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) | Easy | Linked List, Recursion | Iterative pointer merge | O(m + n) | O(1) | [README](easy/021/README.md) | [Python](easy/021/solution_v1.py) |
 | 067 | [Add Binary](https://leetcode.com/problems/add-binary/) | Easy | Math, String, Bit Manipulation, Simulation | Integer conversion and addition | O(m + n) | O(m + n) | [README](easy/067/README.md) | [Python](easy/067/solution_v1.py) |
@@ -46,6 +47,9 @@ Here, `n` denotes input length: the number of array elements for Two Sum, the nu
 │   │   ├── README.md
 │   │   └── solution_v1.py
 │   ├── 021/
+│   │   ├── README.md
+│   │   └── solution_v1.py
+│   ├── 035/
 │   │   ├── README.md
 │   │   └── solution_v1.py
 │   ├── 066/
