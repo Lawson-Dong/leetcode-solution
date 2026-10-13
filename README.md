@@ -6,7 +6,7 @@ Personal LeetCode practice by [Lawson Dong](https://github.com/Lawson-Dong), doc
 
 | Easy | Medium | Hard | Total |
 |---|---|---|---|
-| 10 | 0 | 0 | 10 |
+| 11 | 0 | 0 | 11 |
 
 ## Problem Index
 
@@ -23,7 +23,9 @@ Personal LeetCode practice by [Lawson Dong](https://github.com/Lawson-Dong), doc
 | 067 | [Add Binary](https://leetcode.com/problems/add-binary/) | Easy | Math, String, Bit Manipulation, Simulation | Integer conversion and addition | O(m + n) | O(m + n) | [README](easy/067/README.md) | [Python](easy/067/solution_v1.py) |
 | 069 | [Sqrt(x)](https://leetcode.com/problems/sqrtx/) | Easy | Math, Binary Search | Linear search (v1); binary search (v2) | O(log(x + 1)) for v2 | O(1) | [README](easy/069/README.md) | [v1](easy/069/solution_v1.py), [v2](easy/069/solution_v2.py) |
 
-Here, `n` denotes input length: the number of array elements for Two Sum, the number of decimal digits for Palindrome Number, and the number of Roman numeral characters for Roman to Integer, and the number of characters for Valid Parentheses. For Add Binary, `m` and `n` are the input string lengths. For Merge Two Sorted Lists, `m` and `n` are the input list lengths. For Longest Common Prefix, `n` is the number of strings, `m` is the length of the first string, and `p` is the returned prefix length.
+| 083 | [Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/) | Easy | Linked List | In-place pointer traversal | O(n) | O(1) | [README](easy/083/README.md) | [Python](easy/083/solution_v1.py) |
+
+Here, `n` denotes input length: the number of array elements for Two Sum, the number of decimal digits for Palindrome Number, and the number of Roman numeral characters for Roman to Integer, and the number of characters for Valid Parentheses. For Remove Duplicates from Sorted List, `n` is the number of linked-list nodes. For Add Binary, `m` and `n` are the input string lengths. For Merge Two Sorted Lists, `m` and `n` are the input list lengths. For Longest Common Prefix, `n` is the number of strings, `m` is the length of the first string, and `p` is the returned prefix length.
 
 ## Repository Structure
 
@@ -59,10 +61,13 @@ Here, `n` denotes input length: the number of array elements for Two Sum, the nu
 │   ├── 067/
 │   │   ├── README.md
 │   │   └── solution_v1.py
-│   └── 069/
+│   ├── 069/
+│   │   ├── README.md
+│   │   ├── solution_v1.py
+│   │   └── solution_v2.py
+│   └── 083/
 │       ├── README.md
-│       ├── solution_v1.py
-│       └── solution_v2.py
+│       └── solution_v1.py
 ├── medium/
 ├── hard/
 └── LICENSE
