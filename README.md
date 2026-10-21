@@ -6,13 +6,14 @@ Personal LeetCode practice by [Lawson Dong](https://github.com/Lawson-Dong), doc
 
 | Easy | Medium | Hard | Total |
 |---|---|---|---|
-| 11 | 0 | 0 | 11 |
+| 11 | 1 | 0 | 12 |
 
 ## Problem Index
 
 | # | Problem | Difficulty | Topics | Approach | Expected Time | Space | Notes | Code |
 |---|---|---|---|---|---|---|---|---|
 | 001 | [Two Sum](https://leetcode.com/problems/two-sum/) | Easy | Array, Hash Table | One-pass hash table | O(n) | O(n) | [README](easy/001/README.md) | [Python](easy/001/solution_v1.py) |
+| 002 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) | Medium | Linked List, Math, Recursion | Digit-wise addition with carry and dummy head | O(max(m, n)) | O(1) auxiliary; O(max(m, n)) output | [README](medium/002/README.md) | [Python](medium/002/solution_v1.py) |
 | 009 | [Palindrome Number](https://leetcode.com/problems/palindrome-number/) | Easy | Math, String | Explicit reversal (v1); string slicing (v2) | O(n) | O(n) | [README](easy/009/README.md) | [v1](easy/009/solution_v1.py), [v2](easy/009/solution_v2.py) |
 | 013 | [Roman to Integer](https://leetcode.com/problems/roman-to-integer/) | Easy | Hash Table, Math, String | Adjacent-symbol comparison | O(n) | O(1) | [README](easy/013/README.md) | [Python](easy/013/solution_v1.py) |
 | 014 | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/) | Easy | String, Trie | Vertical scanning | O(nm) | O(1) auxiliary; O(p) output | [README](easy/014/README.md) | [Python](easy/014/solution_v1.py) |
@@ -24,7 +25,7 @@ Personal LeetCode practice by [Lawson Dong](https://github.com/Lawson-Dong), doc
 | 069 | [Sqrt(x)](https://leetcode.com/problems/sqrtx/) | Easy | Math, Binary Search | Linear search (v1); binary search (v2) | O(log(x + 1)) for v2 | O(1) | [README](easy/069/README.md) | [v1](easy/069/solution_v1.py), [v2](easy/069/solution_v2.py) |
 | 083 | [Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/) | Easy | Linked List | In-place pointer traversal | O(n) | O(1) | [README](easy/083/README.md) | [Python](easy/083/solution_v1.py) |
 
-Here, `n` denotes input length: the number of array elements for Two Sum, the number of decimal digits for Palindrome Number, and the number of Roman numeral characters for Roman to Integer, and the number of characters for Valid Parentheses. For Remove Duplicates from Sorted List, `n` is the number of linked-list nodes. For Add Binary, `m` and `n` are the input string lengths. For Merge Two Sorted Lists, `m` and `n` are the input list lengths. For Longest Common Prefix, `n` is the number of strings, `m` is the length of the first string, and `p` is the returned prefix length.
+Here, `n` denotes input length: the number of array elements for Two Sum, the number of decimal digits for Palindrome Number, and the number of Roman numeral characters for Roman to Integer, and the number of characters for Valid Parentheses. For Remove Duplicates from Sorted List, `n` is the number of linked-list nodes. For Add Binary, `m` and `n` are the input string lengths. For Merge Two Sorted Lists and Add Two Numbers, `m` and `n` are the input list lengths. For Longest Common Prefix, `n` is the number of strings, `m` is the length of the first string, and `p` is the returned prefix length.
 
 ## Repository Structure
 
@@ -68,6 +69,9 @@ Here, `n` denotes input length: the number of array elements for Two Sum, the nu
 │       ├── README.md
 │       └── solution_v1.py
 ├── medium/
+│   └── 002/
+│       ├── README.md
+│       └── solution_v1.py
 ├── hard/
 └── LICENSE
 ```
